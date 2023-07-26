@@ -1,132 +1,149 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
+    <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade Avaliativa Interfaces Web II</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividade Avaliativa Interfaces Web II</title>
 
-    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css">
 
-</head>
+    </head>
 
-<body>
+    <body>
 
-    <header>
+        <header>
 
-        <h1>Calculadora de IMC</h1>
+            <h1 class=".caberoda">Calculadora de IMC</h1>
 
-    </header>
+        </header>
 
-    <main>
+        <main>
 
-        <br><br>
-        <br><br>
+            <p>O Índice de Massa Corporal, ou IMC, é uma medida amplamente utilizada para avaliar o peso corporal em relação
+                à altura de uma pessoa. Trata-se de uma ferramenta simples, porém valiosa, que ajuda a compreender a relação
+                entre o peso e a saúde.</p>
+            <p>O cálculo do IMC é bastante direto: basta dividir o peso (em quilogramas) pela altura ao quadrado (em
+                metros). A fórmula é a seguinte:</p>
+            <p class=".p"><b>IMC = peso (kg) / altura² (m²)</b></p>
+            <p>O resultado do IMC pode ser interpretado conforme a tabela de classificação estabelecida pela Organização
+                Mundial da Saúde (OMS):</p>
 
-        <p>O Índice de Massa Corporal, ou IMC, é uma medida amplamente utilizada para avaliar o peso corporal em relação
-            à altura de uma pessoa. Trata-se de uma ferramenta simples, porém valiosa, que ajuda a compreender a relação
-            entre o peso e a saúde.</p>
-        <p>O cálculo do IMC é bastante direto: basta dividir o peso (em quilogramas) pela altura ao quadrado (em
-            metros). A fórmula é a seguinte:</p>
-        <p class=".p"><b>IMC = peso (kg) / altura² (m²)</b></p>
-        <p>O resultado do IMC pode ser interpretado conforme a tabela de classificação estabelecida pela Organização
-            Mundial da Saúde (OMS):</p>
+            <br>
 
-            <br><br>
+            <div class=".img">
 
-        <ul>
-            <li>Abaixo de 18,5: Abaixo do peso normal</li>
-            <li>18,5 a 24,9: Peso normal</li>
-            <li>25,0 a 29,9: Sobrepeso</li>
-            <li>30,0 a 34,9: Obesidade grau 1</li>
-            <li>35,0 a 39,9: Obesidade grau 2</li>
-            <li>40,0 ou mais: Obesidade grau 3 (obesidade mórbida)</li>
-        </ul>
+                <section>
 
-        
+                    <img src="imagens/obesidade.jpg">
 
-        <form id="imcCalculator">
-            <label for="weight">Peso (kg):</label>
-            <input type="number" id="weight" required>
+                </section>
 
-            <label for="height">Altura (metros):</label>
-            <input type="number" id="height" required>
+            </div>
 
-            <button type="button" onclick="calculateIMC()">Calcular IMC</button>
-        </form>
+            <h2>Calcule aqui seu IMC</h2>
 
-        <div id="result"></div><br><br>
+            <br>
+
+            <form id="imcCalculator">
+                <label for="weight">Peso (kg):</label>
+                <input type="number" id="weight" required>
+
+                <label for="height">Altura (metros):</label>
+                <input type="number" id="height" required>
+
+                <button type="button" onclick="calculateIMC()">Calcular IMC</button>
+            </form>
+
+            <div id="result"></div><br><br>
+
+            <div class=".p">
+
+                <p>É importante ressaltar que o IMC é apenas uma indicação inicial e não deve ser encarado como o único
+                    critério
+                    para avaliar a saúde de uma pessoa. Outros fatores, como a composição corporal, a distribuição da
+                    gordura e
+                    a idade, também são relevantes para uma análise completa.</p>
+                <p>Além disso, o IMC é mais adequado para avaliações em nível populacional e não deve ser utilizado de forma
+                    isolada para diagnosticar problemas de saúde individuais. Cada pessoa é única e tem características
+                    físicas
+                    e metabólicas distintas.</p>
+                <p>Quando utilizado de maneira correta, o IMC pode ser útil para identificar possíveis problemas de peso e
+                    saúde, bem como fornecer uma base para o planejamento de intervenções em saúde pública. Por exemplo, ao
+                    identificar uma alta prevalência de obesidade em uma determinada população, as autoridades de saúde
+                    podem
+                    tomar medidas para promover a conscientização sobre hábitos alimentares saudáveis e incentivar a prática
+                    de
+                    atividades físicas.</p>
+                <p>Contudo, é fundamental que a abordagem para a promoção da saúde seja holística e personalizada. Cada
+                    indivíduo tem uma história de vida, hábitos alimentares, níveis de atividade física e fatores genéticos
+                    que
+                    devem ser levados em conta na busca por um estilo de vida mais saudável.</p>
+                <p>Em resumo, o IMC é uma ferramenta valiosa para avaliar a relação entre o peso e a altura de uma pessoa,
+                    mas
+                    deve ser utilizada com cautela e em conjunto com outros indicadores de saúde. Buscar um equilíbrio entre
+                    alimentação saudável, atividade física regular e bem-estar emocional é essencial para alcançar uma vida
+                    plena e saudável. Consultar um profissional de saúde qualificado pode fornecer orientações adequadas e
+                    individualizadas para cuidar da saúde de forma mais efetiva.</p>
+
+            </div>
+
+        </main>
+
+        <footer>
+
+            <p class=".caberoda">Todos os direitos reservados</p>
+
+        </footer>
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"> </script>
+        <script> new window.VLibras.Widget('https://vlibras.gov.br/app') </script>
 
 
-        <p>É importante ressaltar que o IMC é apenas uma indicação inicial e não deve ser encarado como o único critério
-            para avaliar a saúde de uma pessoa. Outros fatores, como a composição corporal, a distribuição da gordura e
-            a idade, também são relevantes para uma análise completa.</p>
-        <p>Além disso, o IMC é mais adequado para avaliações em nível populacional e não deve ser utilizado de forma
-            isolada para diagnosticar problemas de saúde individuais. Cada pessoa é única e tem características físicas
-            e metabólicas distintas.</p>
-        <p>Quando utilizado de maneira correta, o IMC pode ser útil para identificar possíveis problemas de peso e
-            saúde, bem como fornecer uma base para o planejamento de intervenções em saúde pública. Por exemplo, ao
-            identificar uma alta prevalência de obesidade em uma determinada população, as autoridades de saúde podem
-            tomar medidas para promover a conscientização sobre hábitos alimentares saudáveis e incentivar a prática de
-            atividades físicas.</p>
-        <p>Contudo, é fundamental que a abordagem para a promoção da saúde seja holística e personalizada. Cada
-            indivíduo tem uma história de vida, hábitos alimentares, níveis de atividade física e fatores genéticos que
-            devem ser levados em conta na busca por um estilo de vida mais saudável.</p>
-        <p>Em resumo, o IMC é uma ferramenta valiosa para avaliar a relação entre o peso e a altura de uma pessoa, mas
-            deve ser utilizada com cautela e em conjunto com outros indicadores de saúde. Buscar um equilíbrio entre
-            alimentação saudável, atividade física regular e bem-estar emocional é essencial para alcançar uma vida
-            plena e saudável. Consultar um profissional de saúde qualificado pode fornecer orientações adequadas e
-            individualizadas para cuidar da saúde de forma mais efetiva.</p>
+        <script>
 
-    <br><br>
+            function calculateIMC() {
+                const weight = parseFloat(document.getElementById('weight').value);
+                const height = parseFloat(document.getElementById('height').value);
 
-        <br><br>
-        <br><br>
+                if (isNaN(weight) || isNaN(height) || height <= 0 || weight <= 0) {
+                    alert('Por favor, insira valores válidos para peso e altura.');
+                    return;
+                }
 
-
-    </main>
-
-    <footer>
-
-    </footer>
-
-    <script>
-
-        function calculateIMC() {
-            const weight = parseFloat(document.getElementById('weight').value);
-            const height = parseFloat(document.getElementById('height').value);
-
-            if (isNaN(weight) || isNaN(height) || height <= 0 || weight <= 0) {
-                alert('Por favor, insira valores válidos para peso e altura.');
-                return;
+                const imc = weight / (height * height);
+                displayResult(imc);
             }
 
-            const imc = weight / (height * height);
-            displayResult(imc);
-        }
+            function displayResult(imc) {
+                let resultText = '';
+                if (imc < 18.5) {
+                    resultText = 'Abaixo do peso.';
+                } else if (imc < 24.9) {
+                    resultText = 'Peso normal.';
+                } else if (imc < 29.9) {
+                    resultText = 'Sobrepeso.';
+                } else if (imc < 34.9) {
+                    resultText = 'Obesidade grau 1.';
+                } else if (imc < 39.9) {
+                    resultText = 'Obesidade grau 2.';
+                } else {
+                    resultText = 'Obesidade grau 3.';
+                }
 
-        function displayResult(imc) {
-            let resultText = '';
-            if (imc < 18.5) {
-                resultText = 'Abaixo do peso.';
-            } else if (imc < 24.9) {
-                resultText = 'Peso normal.';
-            } else if (imc < 29.9) {
-                resultText = 'Sobrepeso.';
-            } else if (imc < 34.9) {
-                resultText = 'Obesidade grau 1.';
-            } else if (imc < 39.9) {
-                resultText = 'Obesidade grau 2.';
-            } else {
-                resultText = 'Obesidade grau 3.';
+                document.getElementById('result').textContent = `Seu IMC é ${imc.toFixed(2)}. ${resultText}`;
             }
 
-            document.getElementById('result').textContent = `Seu IMC é ${imc.toFixed(2)}. ${resultText}`;
-        }
+        </script>
 
-    </script>
-
-</body>
+    </body>
 
 </html>
